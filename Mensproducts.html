@@ -1,0 +1,70 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Men’s Collection — YourStore</title>
+  <style>
+    body { margin: 0; font-family: sans-serif; background: #f4f4f4; }
+    .mens-section { padding: 2rem; max-width: 1200px; margin: auto; }
+    .hero {
+      text-align: center; padding: 2rem;
+      background: #333; color: #fff; border-radius: 8px;
+    }
+    .hero h2 { font-size: 2rem; margin-bottom: 0.5rem; }
+    .hero p { font-size: 1.1rem; margin-bottom: 1rem; }
+    .hero .btn {
+      display: inline-block; padding: 0.75rem 1.5rem;
+      background: #ff6600; color: white;
+      text-decoration: none; border-radius: 4px;
+      font-weight: bold;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1.5rem; margin-top: 2rem;
+    }
+    .product-card {
+      background: white; padding: 1rem;
+      border-radius: 6px; text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .product-card:hover { transform: translateY(-5px); }
+    .product-card img {
+      width: 100%; height: auto; border-radius: 4px;
+      margin-bottom: 0.75rem;
+    }
+    .product-card h3 { margin: 0 0 0.5rem; font-size: 1.1rem; }
+    .product-card p { color: #555; font-size: 0.95rem; }
+  </style>
+</head>
+<body>
+  <section class="mens-section">
+    <div class="hero">
+      <h2>Men’s Collection</h2>
+      <p>Explore the latest trends in men’s fashion — curated just for you.</p>
+      <a href="/men" class="btn">Shop Now</a>
+    </div>
+    <div class="product-grid">
+      <article class="product-card">
+        <img src="https://media.istockphoto.com/id/1253466968/photo/full-length-of-handsome-young-african-man-in-casual-wear.jpg?s=612x612&w=0&k=20&c=J3QNZecx7xJ5Q3MNlQ2vtf-5ZvEMiZBusFfsFMiMfAg=" alt="Men's Casual Jacket">
+        <h3>Casual Jacket</h3>
+        <p>From ₹2,999</p>
+      </article>
+      <article class="product-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmqVskMEob3UxdKIBQ1UvyAO6sj9s-C-zMiylXLc6oDIZavaSsm0XQoD4QEf721oo9sAw&usqp=CAU" alt="Men's Formal Shirt">
+        <h3>Formal Shirt</h3>
+        <p>From ₹1,499</p>
+      </article>
+      <article class="product-card">
+        <img src="data:image/jpeg;base64,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" alt="Men's Denim Jeans">
+        <h3>Denim Jeans</h3>
+        <p>From ₹1,999</p>
+      </article>
+      <!-- Add more product cards as needed -->
+    </div>
+  </section>
+</body>
+</html>
